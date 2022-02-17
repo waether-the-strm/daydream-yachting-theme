@@ -1,0 +1,43 @@
+.sticky {
+	display: block;
+}
+
+.post,
+.page {
+	margin: 0 0 1.5em;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+.home {
+	.gradient-fade {
+		&::after {
+			content: " ";
+			position: sticky;
+			background: linear-gradient(to top, white, transparent);
+			left: 0;
+			right: 0;
+			bottom: 0;
+			height: $height__gradient-fade;
+			margin-top: -#{$height__gradient-fade};
+			display: block;
+			pointer-events: none;
+		}
+		.wp-block-media-text__content *:last-child {
+			margin-bottom: $height__gradient-fade;
+		}
+	}
+}

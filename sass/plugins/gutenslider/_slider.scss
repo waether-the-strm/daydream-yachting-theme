@@ -1,0 +1,34 @@
+
+body:not(.blog):not(.archive) .wp-block-eedee-block-gutenslider.is-full.ddy-gutenslider {
+    position: relative !important;
+    height: 100vh !important;
+    z-index: 1;
+}
+
+.admin-bar .ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider {
+    height: calc(75vh - var(--global--admin-bar--height) - 46px) !important;
+}
+
+.admin-bar .entry-content {
+    margin-top: 46px;
+}
+
+body:not(.blog):not(.archive) .ddy-cover .wp-block-eedee-block-gutenslider.is-full {
+    --gutenslider-min-height: calc(75vh - var(--gutenslider-margin-y)*2) !important;
+}
+
+.wp-block-eedee-block-gutenslider .swiper-wrapper {
+    min-height: auto !important;
+}
+
+footer#colophon {
+    position: relative;
+}
+
+footer.entry-footer {
+    position: relative;
+}
+
+body.blog .wp-block-eedee-block-gutenslider.is-full {
+    display: flex;
+}

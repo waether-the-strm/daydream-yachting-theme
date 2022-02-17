@@ -1,0 +1,19 @@
+{
+  "name": "daydream-yachting-theme",
+  "version": "1.0.0",
+  "description": "WordPress theme created for daydream-yachting.com",
+  "main": "index.html",
+  "scripts": {
+    "watch": "sass ./sass:./ -w",
+    "livereload": "livereload style.css",
+    "dev": "npm run watch & npm run livereload" 
+  },
+  "author": "STRM Jan Mirecki",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.7"
+  },
+  "dependencies": {
+    "livereload": "^0.9.3"
+  }
+}

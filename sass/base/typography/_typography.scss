@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200..600&display=swap');
+
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-size: 1rem;
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+@import "copy";

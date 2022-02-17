@@ -18,6 +18,7 @@ endif;
 function daydream_scripts() {
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'daydream-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
+	wp_enqueue_script( 'daydream-livereload', get_template_directory_uri() . '/livereload.js', array(), wp_get_theme()->get( 'Version' ) );
 }
 
 add_action( 'wp_enqueue_scripts', 'daydream_scripts' );

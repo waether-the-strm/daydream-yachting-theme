@@ -1,0 +1,54 @@
+$headerHeight: 120px;
+$smallPad: 10px;
+$transitionTiming: 0.15s ease-in-out;
+$wpAdminBarH: 32px;
+
+.site-header {
+    background-color: white;
+    box-shadow: 0 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    min-height: calc($headerHeight / 3);
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    .admin-bar & {
+        top: $wpAdminBarH;
+    }
+
+    .nav-menu > .menu-item {
+        padding: $smallPad;
+        transition: all $transitionTiming;
+    }
+
+    &:hover {
+        .nav-menu > .menu-item {
+            padding: #{$smallPad * 4} calc($smallPad / 2);
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            font-size: 1.2em;
+        }
+        .custom-logo {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.site-branding {
+    position: absolute;
+    left: $smallPad;
+    top: $smallPad;
+}
+
+.custom-logo {
+    // max-height: 180px;
+    min-height: 80px;
+    height: calc(1.1rem + #{2 * $smallPad});
+    width: auto;
+    transform-origin: left top;
+    transition: transform $transitionTiming;
+    filter: drop-shadow(0 5px 10px white);
+}
