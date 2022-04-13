@@ -5,8 +5,12 @@ body:not(.blog):not(.archive) .wp-block-eedee-block-gutenslider.is-full.ddy-gute
     z-index: 1;
 }
 
-.admin-bar .ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider {
-    height: calc(75vh - var(--global--admin-bar--height) - 46px) !important;
+.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider.ddy-gutenslider {
+    height: calc(75vh - 46px) !important;
+
+    .admin-bar & {
+        height: calc(75vh - var(--global--admin-bar--height) - 46px) !important;
+    }
 }
 
 .admin-bar .entry-content {

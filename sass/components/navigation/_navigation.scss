@@ -168,6 +168,27 @@ $subMenuZindex: 99999;
 			background-color: #eee;
 		}
 	}
+}
 
+.wp-block-site-logo {
+	margin-left: 30px
+}
 
+.custom-logo-link {
+	position: absolute;
+    z-index: 99;
+}
+
+.ddy-main-nav {
+	margin-right: 30px;
+}
+
+.wp-block-navigation__submenu-container {
+	border-radius: 10px;
+}
+
+.wp-block-navigation-item__label {
+	& .wp-block-navigation-item__label {
+		font-weight: 100;
+	}
 }
